@@ -1,0 +1,28 @@
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul * + * {
+  margin-top: 0.5em;
+}
+
+li {
+  padding: 0 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 10em;
+  border: 2px solid white;
+}
+
+button {
+  position: relative;
+  color: var(--secondary-text-color);
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 0.5em;
+  font-size: 1.25em;
+  margin-bottom: 0.2em;
+}
