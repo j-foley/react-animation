@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
+import { useAutoAnimate } from '@formkit/auto-animate/react'
 import './style.css'
 
 export const List = () => {
   const [list, setList] = useState([...Array(5).keys()])
+  const [parent] = useAutoAnimate<HTMLUListElement>()
 
   const handleAdd = () =>
     setList((prev) => {
@@ -16,7 +18,7 @@ export const List = () => {
       <button type='button' onClick={handleAdd}>
         Add item
       </button>
-      <ul>
+      <ul ref={parent}>
         {list.map((item, index) => (
           <li key={`item-${item}`}>
             <div>List item {item + 1}</div>
