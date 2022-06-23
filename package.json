@@ -11,14 +11,16 @@
     "build": "NODE_ENV=production node builder.js"
   },
   "dependencies": {
+    "@react-spring/web": "^9.4.5",
     "fs-extra": "^10.0.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@react-spring/types": "^9.4.5",
     "@types/live-server": "^1.2.1",
     "@types/node": "^16.9.1",
-    "@types/react": "^18.0.10",
+    "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",
     "@typescript-eslint/eslint-plugin": "^4.31.0",
     "@typescript-eslint/parser": "^4.31.0",
