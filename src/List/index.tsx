@@ -13,12 +13,16 @@ export const List = () => {
 
   return (
     <>
-      <button onClick={handleAdd}>Add item</button>
+      <button type='button' onClick={handleAdd}>
+        Add item
+      </button>
       <ul>
         {list.map((item, index) => (
           <li key={`item-${item}`}>
             <div>List item {item + 1}</div>
-            <button onClick={() => handleRemove(index)}>X</button>
+            <button type='button' onClick={() => handleRemove(index)}>
+              X
+            </button>
           </li>
         ))}
       </ul>

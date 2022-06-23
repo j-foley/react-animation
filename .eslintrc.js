@@ -29,7 +29,7 @@ module.exports = {
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     'no-use-before-define': 'off',
     'no-unused-vars': 'warn',
-    'import/prefer-default-export': 1,
+    'import/prefer-default-export': 0,
     'no-shadow': 1,
     'prefer-const': 1,
     'prefer-spread': 1,
